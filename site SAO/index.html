@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTech | SAO - Subconscious Anime Observer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0e0e15;
+      color: #ffffff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #141421;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin-top: 20px;
+      margin-left: 50px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #13e7d6;
+    }
+
+    header .logo {
+      height: 80px; /* taille du logo */
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #8b5cf6;
+    }
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      background: linear-gradient(120deg, #1f1f2e, #0d0d14);
+    }
+    .hero h2 {
+      font-size: 3rem;
+      max-width: 900px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      padding: 14px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #8b5cf6;
+      color: #fff;
+      transition: 0.3s;
+    }
+    .hero button:hover {
+      background: #6d28d9;
+    }
+    section {
+      padding: 70px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .card {
+      background: #1a1a27;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #141421;
+      color: #777;
+    }
+.carousel {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .slides {
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.carousel img {
+  width: auto;       /* largeur automatique */
+  max-width: 100%;   /* ne dépasse pas la largeur du conteneur */
+  height: auto;      /* conserve le ratio */
+  max-height: 80vh;  /* s'adapte à la hauteur de la fenêtre */
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+    .order-btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #8b5cf6;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+  }
+
+  .order-btn:hover {
+    background: #6d28d9;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="BTech Logo" class="logo">
+    <h1>Trust Us</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tech">Technology</a>
+      <a href="#team">The B's</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="carousel">
+      <div class="slides">
+        <img src="image1.png" alt="Slide 1">
+        <img src="image2.png" alt="Slide 2">
+        <img src="image3.png" alt="Slide 3">
+      </div>
+    </div>
+    <h2>SAO: Subconscious Anime Observer</h2>
+    <p>The world's first fully cognitive-reactive VR device engineered by BTech. SAO translates neural intent into real-time interaction, creating unmatched immersion and precision.</p>
+    <a href="order_unavailable.html" class="order-btn">Pre-order Now</a>
+  </section>
+
+  <section id="about">
+    <h2>About SAO</h2>
+    <p>The Subconscious Anime Observer is a fully portable neural-linked VR helmet designed to bring users, aged 15 and above, directly into fully realized anime-inspired virtual worlds. This next‑generation device merges cognitive signal interpretation with adaptive digital environments, allowing users to step literally inside the worlds they choose.</p>
+    <p>Built with a reinforced metal–plastic hybrid shell similar to a motorcycle helmet, the device houses advanced neuronal sensors that safely synchronize with the user’s cognitive activity. Once worn, simply launch the desired program and the system transports you into a deeply immersive, interactive universe.</p>
+    <p>Created as a fusion between VR headset, console, and a new technological category altogether, SAO redefines video game experiences. It is the first technology capable of constructing vast anime realities around the user, safe, stable, and breathtakingly lifelike.</p>
+  </section>
+
+  <section id="tech">
+    <h2>Technology</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Cognitive Link Core</h3>
+        <p>High‑resolution neuronal sensors interpret cognitive signals with precision, enabling seamless entry into selected virtual worlds while maintaining complete brain safety. Contrary to popular misconceptions, the device operates with electrical fields far too weak to cause any neural harm.</p>
+      </div>
+
+      <div class="card">
+        <h3>Portable Immersion System</h3>
+        <p>The helmet is fully portable, requiring only basic power to operate. Users can enter expansive virtual anime environments anywhere without external hardware or stationary VR rooms.</p>
+      </div>
+
+      <div class="card">
+        <h3>World Generation Engine</h3>
+        <p>Transforms data, visuals, and interactive elements into entire anime universes. Choose your world, launch the program, and step inside, every environment adapts to user intent in real time.</p>
+      </div>
+
+      <div class="card">
+        <h3>Life‑Changing Immersion</h3>
+        <p>The technology creates experiences so vivid that they reshape entertainment and society. Benefits include emotional impact, personal transformation, and unprecedented escapism. The primary risk: users may temporarily confuse virtual and real worlds due to immersion depth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Meet The B's</h2>
+    <p>The B’s are three visionary entrepreneurs whose combined influence reshaped the global technological landscape. But among them stands one figure whose impact surpasses all others , a man widely regarded as the uncontested sovereign of modern innovation.</p>
+
+    <p><strong>Baptiste, The King of Modern Technology</strong><br>
+    Baptiste is not merely an entrepreneur , he is the defining force of contemporary technological evolution. Recognized globally as the King of Modern Technology, his reach extends across every major field: cognitive systems, virtual immersion, advanced computation, and global digital infrastructure. Entire industries follow the direction he sets. His capacity to envision a technological future decades ahead, then materialize it with unmatched precision, makes him one of the most influential figures of the century. <br><br>
+    As the supreme architect behind BTech’s grand strategy, Baptiste is responsible for the conceptual birth and philosophical identity of SAO. His decisions guide continents, his innovations rewrite scientific doctrines, and his leadership forms the core of BTech’s dominance. In every major breakthrough the world celebrates, Baptiste’s touch is unmistakable , refined, visionary, and unquestionably superior.</p>
+
+    <p><strong>Breuil Clement, The Titan of Engineering</strong><br>
+    Breuil Clement is a master of physical innovation , a legend in advanced hardware architecture and neuro-responsive system engineering. His creations drive the world’s most efficient processors and the backbone of countless technological infrastructures. While Baptiste defines the future, Breuil ensures that the physical world can keep up with that vision. His relentless pursuit of perfection has led BTech’s research divisions to global renown.</p>
+
+    <p><strong>Benzouaoui Selim, The Oracle of Intelligence Systems</strong><br>
+    Benzouaoui Selim stands at the forefront of artificial cognition and adaptive intelligence. His algorithms power vast intelligent ecosystems and enable SAO’s organic interaction with user intent. A thinker of extraordinary depth, Selim brings unparalleled clarity to the most complex forms of digital consciousness. His work forms the cognitive soul of BTech’s creations.</p>
+
+    <p>Together, the B’s form a technological trinity. But it is Baptiste , the King of Modern Technology , who sits at its apex, guiding the world into a new era of innovation, power, and limitless potential.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email us at: contact@btech.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 BTech. All rights reserved.</p>
+  </footer>
+</body>
+</html>
